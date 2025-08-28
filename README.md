@@ -73,7 +73,7 @@ Eriggo is your go-to platform for chef-prepared meals, farm-fresh fruits, and pa
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/malvisanochie1/school-website.git
+   git clone https://github.com/malvisanochie1/errigo.git
    cd eriggo
    ```
 2. **Install dependencies:**
@@ -97,14 +97,6 @@ We welcome contributions! Please open an issue or submit a pull request with you
 
 ---
 
-## 📬 Contact & Support
-
-- **Website:** [eriggo.com](https://eriggo.com) _(update with your real URL)_
-- **Email:** support@eriggo.com _(update as needed)_
-- **Twitter:** [@eriggoapp](https://twitter.com/eriggoapp) _(update as needed)_
-
----
-
 ## 📱 Download the App
 
 - **App Store:** [Coming Soon]
@@ -114,4 +106,3 @@ We welcome contributions! Please open an issue or submit a pull request with you
 
 > **Eriggo – Healthy Eating, Delivered Swiftly.**
 > Chef-made meals, organic groceries, and specialty diet foods—all fresh to your door.
-"# errigo" 
