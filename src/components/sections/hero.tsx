@@ -91,7 +91,7 @@ const hero = () => {
                       <div className="flex -space-x-3">
                         <div className="rounded-full border border-[#F3F6F3] bg-[#D6D6E1]">
                           <Image
-                            src="/avatar1.png"
+                            src="/Avatar1.png"
                             alt="Customer 1"
                             width={40}
                             height={40}
@@ -100,7 +100,7 @@ const hero = () => {
                         </div>
                         <div className="rounded-full border border-[#F3F6F3] bg-[#FFE388]">
                           <Image
-                            src="/avatar2.png"
+                            src="/Avatar2.png"
                             alt="Customer 1"
                             width={40}
                             height={40}
@@ -109,7 +109,7 @@ const hero = () => {
                         </div>
                         <div className="rounded-full border border-[#F3F6F3] bg-[#FFCCD4]">
                           <Image
-                            src="/avatar3.png"
+                            src="/Avatar3.png"
                             alt="Customer 1"
                             width={40}
                             height={40}
@@ -118,7 +118,7 @@ const hero = () => {
                         </div>
                         <div className="rounded-full border border-[#F3F6F3] bg-[#B8E2C4]">
                           <Image
-                            src="/avatar4.png"
+                            src="/Avatar4.png"
                             alt="Customer 1"
                             width={40}
                             height={40}
