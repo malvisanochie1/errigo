@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { errigo } from "../texts/constants";
 const footer = () => {
   return (
     <section className="w-full bg-[#141A14] rounded-t-2xl">
@@ -19,7 +20,7 @@ const footer = () => {
           <div className="container mx-auto">
             <div className="px- mx-auto p-4 h-full flex flex-col md:flex-row space-y-4 md:space-x-10 relative">
               <div className="md:w-4/12 relative">
-                <h2 className="text-2xl font-bold mb-4">Eriggo</h2>
+                <Link href="/" className="text-2xl font-bold mb-4">Eriggo</Link>
                 <p className="md:text-base text-gray-400">
                   {" "}
                   A digital platform that allows you satisfy all your cravings
@@ -32,17 +33,17 @@ const footer = () => {
                     Company
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
+                    {/* <li className="font-semibold">
+                      <Link href="/#customer">Customer</Link>{" "}
+                    </li> */}
                     <li className="font-semibold">
-                      <Link href="#">Customer</Link>{" "}
+                      <Link href="/#products">Vendor</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="#">Vendor</Link>{" "}
+                      <Link href="/#products">Rider</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="#">Rider</Link>{" "}
-                    </li>
-                    <li className="font-semibold">
-                      <Link href="#">FAQ</Link>{" "}
+                      <Link href="/#faqs">FAQ</Link>{" "}
                     </li>
                   </ul>
                 </div>
@@ -52,13 +53,13 @@ const footer = () => {
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
                     <li className="font-semibold">
-                      <Link href="#">Privacy policy</Link>{" "}
+                      <Link href="/Privacy_policy">Privacy policy</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="#">Term of use</Link>{" "}
+                      <Link href="/Term_of_use">Term of use</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="#">Refund policy</Link>{" "}
+                      <Link href="/Refund_policy">Refund policy</Link>{" "}
                     </li>
                   </ul>
                 </div>
@@ -87,10 +88,10 @@ const footer = () => {
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
                     <li className="font-semibold">
-                      <Link href="#">+1 000 000 0000</Link>{" "}
+                      <Link href="#">{errigo.phone}</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="#">Contact@eriggo.com</Link>{" "}
+                      <Link href="#">{errigo.email}</Link>{" "}
                     </li>
                   </ul>
                 </div>

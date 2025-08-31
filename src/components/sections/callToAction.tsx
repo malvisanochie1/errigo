@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { errigo } from "../texts/constants";
 const callToAction = () => {
   return (
     <div className="w-full p-3 sm:p-8">
@@ -66,7 +67,7 @@ const callToAction = () => {
                     height={10}
                     alt=""
                   />
-                  <Link href="#">
+                  <Link href={errigo.android}>
                     <Image
                       src="/Appstorecall.png"
                       loading="lazy"
@@ -76,7 +77,7 @@ const callToAction = () => {
                       alt=""
                     />
                   </Link>
-                  <Link href="#">
+                  <Link href={errigo.ios}>
                     <Image
                       src="/Applestore.png"
                       loading="lazy"

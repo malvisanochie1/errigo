@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { errigo } from "../texts/constants";
+
 const hero = () => {
   return (
     <div className="rounded-b-2xl lg:rounded-b-4xl">
@@ -65,7 +67,7 @@ const hero = () => {
                 {/* Downloads */}
                 <div className="grid grid-cols-2 gap-y-4">
                   <div className="flex gap-4 items-center order-2 lg:order-1 col-span-2 mx-auto lg:mx-0">
-                    <Link href="#" className="shadow-lg shadow-[#A6A6A6]">
+                    <Link href={errigo.ios} className="shadow-lg shadow-[#A6A6A6]">
                       <Image
                         width={150}
                         height={50}
@@ -74,7 +76,7 @@ const hero = () => {
                         className="w-28 sm:w-40"
                       />
                     </Link>
-                    <Link href="#" className="shadow-lg shadow-[#A6A6A6]">
+                    <Link href={errigo.android} className="shadow-lg shadow-[#A6A6A6]">
                       <Image
                         width={150}
                         height={50}

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import CancelIcon from "../ui/CancelIcon";
-
+import { errigo } from "../texts/constants";
 const NAV_ITEMS = [
   { id: "services", label: "Services" },
   { id: "faqs", label: "FAQs" },
@@ -77,7 +77,7 @@ const Navbar = () => {
       <nav>
         <div className="flex items-center justify-between bg-gradient-to-r from-[#d0dfb7a4] via-[#B1CA8C] to-[#97b569a8] px-6 md:px-16 py-6 lg:pt-6 ">
           {/* logo */}
-          <div className="text-[25px] leading-0 font-bold font-Montserrat flex items-center gap-2 text-[#3D4E3C]">
+          <Link href="/" className="text-[25px] leading-0 font-bold font-Montserrat flex items-center gap-2 text-[#3D4E3C]">
             <Image
               src="/favi.png"
               width={27}
@@ -85,7 +85,7 @@ const Navbar = () => {
               alt="eriggo favi icon"
             />
             <span className="hidden md:flex">eriggo</span>
-          </div>
+          </Link>
 
           {/* Desktop Nav with Slide Animation */}
           <AnimatePresence>
@@ -164,13 +164,13 @@ const Navbar = () => {
               {navLinks}
               <div className="flex gap-4 mt-8">
                 <Link
-                  href="apple.com"
+                  href={errigo.ios}
                   className="bg-[#FCBB4D] rounded-full grid place-content-center w-10 h-10"
                 >
                   <Image src="/apple.png" width={15} height={15} alt="" />
                 </Link>
                 <Link
-                  href="apple.com"
+                  href={errigo.android}
                   className="bg-[#FCBB4D] rounded-full grid place-content-center w-10 h-10"
                 >
                   <Image src="/GooglePlay.png" width={15} height={15} alt="" />
