@@ -20,8 +20,8 @@ const hero = () => {
                 </h4>
 
                 <div>
-                  <div className="lg:text-start text-[36px] sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] flex-">
-                    <h1 className="flex items-center justify-center lg:justify-start text-center lg:text-start mb-2">
+                  <div className="lg:text-start text-[36px] sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] leading-10 sm:leading-tight">
+                    <h1 className="flex items-center justify-center lg:justify-start text-center lg:text-start sm:mb-2 leading-tight">
                       {" "}
                       Craving something
                       <span className="hidden xl:flex items-center w-fit ps-3">
@@ -40,7 +40,7 @@ const hero = () => {
                         />{" "}
                       </span>
                     </h1>{" "}
-                    delicious? <br className="lg:hidden" />
+                    delicious? <br className="lg:hidden " />
                     <span className="text-[#262F2566]">It’s on the way!</span>
                   </div>
                 </div>
