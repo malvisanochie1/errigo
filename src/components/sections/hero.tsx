@@ -20,7 +20,7 @@ const hero = () => {
                 </h4>
 
                 <div>
-                  <div className="lg:text-start text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] flex-">
+                  <div className="lg:text-start text-[36px] sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] flex-">
                     <h1 className="flex items-center justify-center lg:justify-start text-center lg:text-start mb-2">
                       {" "}
                       Craving something
