@@ -200,7 +200,7 @@ const Location = () => {
         <div className="grid grid-cols-12 md:gap-x-8 gap-y-6">
           <div className="md:col-span-7 lg:col-span-8 col-span-12 w-full">
             <div
-              className="relative bg-[#F0F5E8] rounded-3xl p-6 flex items-center justify-center h-full w-full"
+              className="relative bg-[#F0F5E8] rounded-3xl p-6- flex items-center justify-center h-full w-full"
               style={{ minHeight: 400 }}
             >
               <Image
@@ -208,7 +208,15 @@ const Location = () => {
                 alt="World map"
                 width={700}
                 height={400}
-                className="rounded-2xl w-full h-auto object-cover"
+                className="rounded-2xl hidden md:block w-full h-auto object-cover"
+              />
+
+              <Image
+                src="/map-mobile.png"
+                alt="World map"
+                width={700}
+                height={400}
+                className="rounded-2xl absolute- md:hidden w-full h-[90%] object-cover"
               />
               {/* Country buttons as map markers */}
               {countryList.map((country) => (
@@ -221,14 +229,23 @@ const Location = () => {
                   style={{ zIndex: 2 }}
                 >
                   <span
-                    className={`w-7 h-7 ${country.color} rounded-full flex items-center justify-center border-4 border-white shadow-lg `}
+                  // className={`w-7 h-7 ${country.color} rounded-full flex items-center justify-center border-4 border-white shadow-lg `}
                   >
+                    <Image
+                      src={country.img}
+                      width={40}
+                      height={40}
+                      alt="location icon"
+                      className="w-8"
+                    />
                     <span className="w-3 h-3 bg-white rounded-full"></span>
                   </span>
                   <span
-                    className={`ml-2 px-4 py-2 ${
+                    className={`ml-2 px-4 py-1 ${
                       country.labelBg
-                    } text-white rounded-xl border ${country.border} font-medium text-lg shadow ${
+                    } text-white rounded-xl border ${
+                      country.border
+                    } font-medium  text-base sm:text-lg shadow ${
                       selectedCountry === country.name
                         ? "ring-2 ring-[#8ecf4c]"
                         : ""
@@ -329,34 +346,34 @@ export default Location;
 const countryList = [
   {
     name: "Nigeria",
-    color: "bg-[#047852]",
+    img: "/location-nigeria.png",
     border: "border-[#047852]",
-    labelBg: "bg-[#047852]",
-    left: "md:left-[22%] left-[10%]",
-    top: "md:top-[15%] top-[10%]",
+    labelBg: "bg-[#022C1E]",
+    left: "md:left-[28%] left-[10%]",
+    top: "md:top-[25%] top-[20%]",
   },
   {
     name: "Ghana",
-    color: "bg-[#B47409]",
+    img: "/location-ghana.png",
     border: "border-[#B47409]",
     labelBg: "bg-[#452C03]",
     left: "left-[48%] lg:left-[60%]",
-    top: "md:top-[40%] top-[40%] lg:top-[30%]",
+    top: "md:top-[40%] top-[37%] lg:top-[30%]",
   },
   {
     name: "UK",
-    color: "bg-[#EF3B07]",
+    img: "/location-uk.png",
     border: "border-[#C62808]",
     labelBg: "bg-[#440C06]",
     left: "md:left-[25%] left-[10%] lg:left-[37%]",
-    top: "top-[56%] md:top-[56%] lg:top-[70%]",
+    top: "top-[53%] md:top-[56%] lg:top-[70%]",
   },
   {
     name: "Canada",
-    color: "bg-[#B91C1C]",
+    img: "/location-canada.png",
     border: "border-[#B91C1C]",
     labelBg: "bg-[#450A0A]",
     left: "md:left-[48%] left-[44%] lg:left-[68%]",
-    top: "top-[80%] md:top-[80%] lg:top-[65%]",
+    top: "top-[70%] md:top-[80%] lg:top-[65%]",
   },
 ];

@@ -6,7 +6,7 @@ import { errigo } from "../texts/constants";
 import { useState } from "react";
 
 const Products = () => {
-  const [activeTab, setActiveTab] = useState("download");
+  const [activeTab, setActiveTab] = useState("customer");
 
   const tabButton = (label: string, tab: string) => (
     <button
@@ -26,13 +26,13 @@ const Products = () => {
     <div id="products" className="">
       <div className="hidden md:block bg-gradient-to-b from-[#FAFFFA] to-[#ffffff] pt-10 px-4- md:px-8">
         <section className="w-full py-16 bg-gradient-to-br from-[#F6FBF1]  to-[#D0DFB7] rounded-3xl p-8 md:p-12  flex flex-col items-center">
-          <div className="bg-[#FAFFFA] rounded-2xl border-2 border-[#a4bf7b8f] shadow-lg px-4 py-2 flex items-center justify-center gap-8 shadow-[#96B56933] mb-8">
-            {tabButton("Download", "download")}
-            {tabButton("Vendors", "vendors")}
-            {tabButton("Riders", "riders")}
+          <div className="bg-[#FAFFFA] rounded-2xl border-2 border-[#a4bf7b8f] shadow-lg px-4 py-2 flex items-center justify-center gap-8 shadow-[hsl(84,34%,56%)] mb-8">
+            {tabButton("Customer", "customer")}
+            {tabButton("Partner", "partner")}
+            {tabButton("Courier", "courier")}
           </div>
           {/* Tab Content */}
-          {activeTab === "download" && (
+          {activeTab === "customer" && (
             <>
               <div className="mb-8 text-center">
                 <h2 className="text-4xl font-semibold mb-4 text-[#222]">
@@ -44,10 +44,16 @@ const Products = () => {
                   chore
                 </p>
                 <div className="flex justify-center gap-4 mb-8-">
-                  <Link href={errigo.ios} className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm">
+                  <Link
+                    href={errigo.ios}
+                    className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm"
+                  >
                     Download for IOS
                   </Link>
-                  <Link href={errigo.android} className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm">
+                  <Link
+                    href={errigo.android}
+                    className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm"
+                  >
                     Download for Andriod
                   </Link>
                 </div>
@@ -83,19 +89,22 @@ const Products = () => {
               </div>
             </>
           )}
-          {activeTab === "vendors" && (
+          {activeTab === "partner" && (
             <>
               <div id="vender" className="mb-8 text-center">
                 <h2 className="text-4xl font-semibold mb-4 text-[#222]">
-                  Become a Vendor
+                  Eriggo Partners earn 40% more.{" "}
                 </h2>
                 <p className="text-lg text-[#444] max-w-xl mx-auto mb-6">
-                  Grow your business with Errigo. Join our network and reach
-                  thousands of customers daily. No upfront costs, easy
-                  onboarding, and dedicated support.
+                  Grow Your Business with Eriggo. Join the fastest-growing food
+                  network today! No upfront costs.
                 </p>
-                <Link href={errigo.partner} className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm">
-                  Partner with us
+                <Link
+                  href={errigo.partner}
+                  className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm flex items-baseline w-fit mx-auto"
+                >
+                  Partner with us{" "}
+                  <FaArrowUpLong className="rotate-45 ps-2 text-lg" />
                 </Link>
               </div>
 
@@ -111,16 +120,16 @@ const Products = () => {
                 </div>
                 <div className="flex justify-center items-end h-full">
                   <Image
-                    src="/vendor3.jpg"
+                    src="/vendor2.jpg"
                     alt="Prepared meals"
                     width={350}
                     height={350}
-                    className="rounded-2xl object-cover w-full h-[200px]"
+                    className="rounded-2xl object-cover w-full h-[230px]"
                   />
                 </div>
                 <div className="flex justify-center">
                   <Image
-                    src="/vendor2.jpg"
+                    src="/vendor3.jpg"
                     alt="Family enjoying meal"
                     width={350}
                     height={350}
@@ -130,47 +139,40 @@ const Products = () => {
               </div>
             </>
           )}
-          {activeTab === "riders" && (
+          {activeTab === "courier" && (
             <>
               <div id="rider" className="mb-8 text-center">
                 <h2 className="text-4xl font-semibold mb-4 text-[#222]">
-                  Become a Rider
+                  Deliver with Eriggo{" "}
                 </h2>
                 <p className="text-lg text-[#444] max-w-xl mx-auto mb-6">
-                  Deliver with Errigo and earn more. Flexible hours, instant
-                  payouts, and bonuses for top performers. Register now to get
-                  started!
+                  Register to get paid and earn bonuses, work at your own time.
                 </p>
-                <Link href={errigo.rider} className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm">
-                  Join as a Rider
+                <Link
+                  href={errigo.partner}
+                  className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm flex items-baseline w-fit mx-auto"
+                >
+                  Become a rider{" "}
+                  <FaArrowUpLong className="rotate-45 ps-2 text-lg" />
                 </Link>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-6xl px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-6xl px-4">
                 <div className="flex justify-center">
                   <Image
                     src="/rider1.jpg"
                     alt="Grocery delivery"
                     width={350}
                     height={350}
-                    className="rounded-2xl object-cover w-full h-[250px]"
-                  />
-                </div>
-                <div className="flex justify-center items-end h-full">
-                  <Image
-                    src="/rider2.jpg"
-                    alt="Prepared meals"
-                    width={350}
-                    height={350}
-                    className="rounded-2xl object-cover w-full h-[200px]"
+                    className="rounded-2xl object-cover w-full h-[280px] object-top"
                   />
                 </div>
                 <div className="flex justify-center">
                   <Image
-                    src="/rider3.png"
+                    src="/rider2.jpg"
                     alt="Family enjoying meal"
                     width={350}
                     height={350}
-                    className="rounded-2xl object-cover w-full h-[250px]"
+                    className="rounded-2xl object-cover w-full h-[280px] object-top"
                   />
                 </div>
               </div>
