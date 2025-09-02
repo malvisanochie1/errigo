@@ -200,10 +200,10 @@ const Products = () => {
                 chore
               </p>
               <div className="flex flex-col gap-4 mb-8-">
-                <button className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm ">
+                <button className="bg-[#374a3d] text-white px-7 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm w-fit mx-auto">
                   Download for IOS
                 </button>
-                <button className="bg-[#FAFFFA] text-[#3D4E3C] px-6 py-3 rounded-xl font-bold shadow transition text-sm ">
+                <button className="bg-[#FAFFFA] text-[#3D4E3C] px-7 py-3 rounded-xl font-bold shadow transition text-sm w-fit mx-auto">
                   Download for Android
                 </button>
               </div>

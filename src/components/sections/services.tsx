@@ -130,6 +130,80 @@ export default function App() {
                 </div>
               </div>
             </div>
+
+            <div className="keen-slider__slide rounded-2xl bg-[#FAFFFA]">
+              <div className="p-1.5 sm:p-2 md:p-3 pb-4">
+                <div className="">
+                  <Image
+                    src="/service5.png"
+                    width={500}
+                    height={500}
+                    className="w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                    Well cooked afro Caribbean meals
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="keen-slider__slide rounded-2xl bg-[#FAFFFA]">
+              <div className="p-1.5 sm:p-2 md:p-3 pb-4">
+                <div className="">
+                  <Image
+                    src="/service6.png"
+                    width={500}
+                    height={500}
+                    className="w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                    Live update on delivery
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="keen-slider__slide rounded-2xl bg-[#FAFFFA]">
+              <div className="p-1.5 sm:p-2 md:p-3 pb-4">
+                <div className="">
+                  <Image
+                    src="/service7.png"
+                    width={500}
+                    height={500}
+                    className="w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                    24/7 customer support
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="keen-slider__slide rounded-2xl bg-[#FAFFFA]">
+              <div className="p-1.5 sm:p-2 md:p-3 pb-4">
+                <div className="">
+                  <Image
+                    src="/service8.png"
+                    width={500}
+                    height={500}
+                    className="w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                    Keto, Vegan, Gluten-Filtered
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           {loaded && instanceRef.current && (
             <div
