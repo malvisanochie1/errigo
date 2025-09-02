@@ -11,7 +11,7 @@ const hero = () => {
         <section className="relative z-10 px-4 md:px-20  w-full h-full flex flex-col items-center justify-center pt-4 md:pt-10 overflow-y-hidden rounded-b-2xl lg:rounded-b-4xl">
           <div className="w-full grid grid-cols-12 items-center justify-center text-center gap-8 ">
             <div className="col-span-12 lg:col-span-7  h-full  w-full">
-              <div className="flex flex-col space-y-6">
+              <div className="flex flex-col space-y-4 sm:space-y-6">
                 <h4 className="w-fit mx-auto lg:mx-0 flex items-center gap-2 pe-3 text-[10px] md:text-xs rounded-4xl text-[#1A2211] bg-[#F6FBF1] border border-[#FAFFFA]">
                   <span className="rounded-4xl py-1 px-4 text-[#FAFFFA] bg-[#3D4E3C] border border-[#5C7059]">
                     Achievement
@@ -20,7 +20,7 @@ const hero = () => {
                 </h4>
 
                 <div>
-                  <div className="lg:text-start text-[36px] sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] leading-10 sm:leading-tight">
+                  <div className="lg:text-start text-[36px] sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] leading-12 sm:leading-tight">
                     <h1 className="flex items-center justify-center lg:justify-start text-center lg:text-start sm:mb-2 leading-tight">
                       {" "}
                       Craving something
