@@ -28,6 +28,17 @@ export default function App() {
     },
   });
 
+  // Auto-scroll every 3 seconds
+  React.useEffect(() => {
+    if (!instanceRef.current) return;
+    const interval = setInterval(() => {
+      if (instanceRef.current) {
+        instanceRef.current.next();
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [loaded, instanceRef]);
+
   return (
     <div id="services" className="py-10 px-3 md:px-8">
       <section className="bg-gradient-to-br from-[#F6FBF1]  to-[#D0DFB7] p-2 rounded-2xl md:rounded-2xl">

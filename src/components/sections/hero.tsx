@@ -20,10 +20,10 @@ const hero = () => {
                 </h4>
 
                 <div>
-                  <div className="lg:text-start text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] flex- ">
+                  <div className="lg:text-start text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#141A14] flex-">
                     <h1 className="flex items-center justify-center lg:justify-start text-center lg:text-start mb-2">
                       {" "}
-                      Craving something{" "}
+                      Craving something
                       <span className="hidden xl:flex items-center w-fit ps-3">
                         {" "}
                         <Image
@@ -67,7 +67,10 @@ const hero = () => {
                 {/* Downloads */}
                 <div className="grid grid-cols-2 gap-y-4">
                   <div className="flex gap-4 items-center order-2 lg:order-1 col-span-2 mx-auto lg:mx-0">
-                    <Link href={errigo.ios} className="shadow-lg shadow-[#A6A6A6]">
+                    <Link
+                      href={errigo.ios}
+                      className="shadow-lg shadow-[#A6A6A6]"
+                    >
                       <Image
                         width={150}
                         height={50}
@@ -76,7 +79,10 @@ const hero = () => {
                         className="w-28 sm:w-40"
                       />
                     </Link>
-                    <Link href={errigo.android} className="shadow-lg shadow-[#A6A6A6]">
+                    <Link
+                      href={errigo.android}
+                      className="shadow-lg shadow-[#A6A6A6]"
+                    >
                       <Image
                         width={150}
                         height={50}
@@ -157,7 +163,7 @@ const hero = () => {
                 </div>
               </div>{" "}
             </div>
-            <div className="hidden, flex lg:justify-end justify-center col-span-12 lg:col-span-5 w-full mx-auto py-4 sm:pb-8 md:pb-10">
+            <div className="flex lg:justify-end justify-center col-span-12 lg:col-span-5 w-full mx-auto py-4 sm:pb-8 md:pb-10">
               <div className="bg-gray-50 rounded-3xl  w-fit mx-auto -mb-40 md:-mb-0 ">
                 <Image
                   width={150}
