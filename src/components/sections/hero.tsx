@@ -164,7 +164,7 @@ const hero = () => {
               </div>{" "}
             </div>
             <div className="flex lg:justify-end justify-center col-span-12 lg:col-span-5 w-full mx-auto py-4 sm:pb-8 md:pb-10 px-10 sm:px-0">
-              <div className="bg-gray-50 rounded-3xl  w-full mx-auto -mb-40 md:-mb-0 ">
+              <div className="bg-gray-50 rounded-3xl  w-full sm:w-fit mx-auto -mb-40 md:-mb-0 ">
                 <Image
                   width={150}
                   height={600}
