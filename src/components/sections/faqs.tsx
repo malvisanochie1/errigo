@@ -118,7 +118,7 @@ export default function Faqs() {
                         }`}
                       >
                         <div
-                          className={`flex  sm:space-x-4 items-center flex-1`}
+                          className={`flex space-x-2 sm:space-x-4 items-center flex-1`}
                         >
                           {/* number eg 01 */}
                           <div
