@@ -83,8 +83,8 @@ export default function MobileMeals() {
                       <Image
                         src={item.src}
                         alt={item.alt}
-                        width={550}
-                        height={350}
+                        width={1000}
+                        height={700}
                         className="rounded-2xl object-cover min-w-full h-[250px]-"
                       />
                     </div>
@@ -131,8 +131,8 @@ export default function MobileMeals() {
                   <Image
                     src={item.src}
                     alt="Grocery delivery"
-                    width={550}
-                    height={350}
+                    width={1000}
+                    height={700}
                     className="rounded-2xl object-cover min-w-full h-[250px]-"
                   />
                 </div>
@@ -184,8 +184,8 @@ export default function MobileMeals() {
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    width={550}
-                    height={350}
+                    width={1000}
+                    height={700}
                     className="rounded-2xl object-cover min-w-full h-[250px]-"
                   />
                 </div>

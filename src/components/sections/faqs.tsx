@@ -104,32 +104,79 @@ export default function Faqs() {
             <Disclosure key={faq.question}>
               {({ open }) => (
                 <div
-                  className="bg-[#f6fbe9] rounded-xl flex items-center px-3 sm:px-8 py-2 md:py-6- transition-shadow shadow-sm hover:shadow-md"
+                  className={`rounded-xl flex items-center px-3 sm:px-8 py-2 md:py-6 transition-all duration-500 ease-in-out shadow-sm hover:shadow-md ${
+                    open ? "bg-[#D0DFB7]" : "bg-[#f6fbe9]"
+                  }`}
                   style={{ minHeight: "80px" }}
                 >
-                  <div className="flex items-center w-full">
-                    <div className="text-[#A5B3A2]  text-lg sm:text-xl md:text-3xl font-bold md:mr-6 min-w-[30px] md:min-w-[48px]">
-                      {String(idx + 1).padStart(2, "0")}
-                    </div>
+                  <div className="flex w-full items-start">
                     <div className="flex-1">
-                      <DisclosureButton className="flex w-full items-center justify-between focus:outline-none">
-                        <span className="text-base grid place-content-center sm:text-lg font-medium text-[#3D4E3C] text-left">
-                          {faq.question}
-                        </span>
-                        <span className="ml-4 bg-[#3D4E3C] p-1 sm:p-1.5 md:p-2-  text-[#F0F5E8] rounded-full text-xs sm:text-sm md:text-base">
-                          {open ? (
-                            <FaTimes className="md:text-sm transition-transform duration-300 rotate-90" />
-                          ) : (
-                            <FaPlus className="md:text-sm transition-transform duration-300" />
-                          )}
+                      {/* Button */}
+                      <DisclosureButton
+                        className={`flex w-full items-center justify-between focus:outline-none relative  ${
+                          open && "border-b pb-2 border-[#ccc]"
+                        }`}
+                      >
+                        <div
+                          className={`flex  sm:space-x-4 items-center flex-1`}
+                        >
+                          {/* number eg 01 */}
+                          <div
+                            className={`text-lg sm:text-xl md:text-3xl font-bold md:mr-6 min-w-[30px] md:min-w-[48px] text-[#A5B3A2] transition-all duration-500 ease-in-out ${
+                              open &&
+                              "scale-105 text-lg sm:text-lg md:text-xl text-[#fff]"
+                            }`}
+                          >
+                            {String(idx + 1).padStart(2, "0")}
+                          </div>
+                          {/*end of number*/}
+                          {/* the questions*/}
+                          <span
+                            className={`text-base grid place-content-center sm:text-lg font-medium text-[#3D4E3C] text-left transition-colors duration-500 ease-in-out ${
+                              open && "ps-1 max-w-44-"
+                            }`}
+                          >
+                            <h3 className={` ${open && "truncate"} `}>
+                              {" "}
+                              {faq.question}
+                            </h3>
+                          </span>
+                          {/*End of the questions*/}
+                        </div>
+
+                        {/* Icon toggle */}
+                        <span
+                          className={`ml-4  p-1.5 md:p-2 rounded-full text-xs sm:text-sm md:text-base flex items-center justify-center relative ${
+                            open
+                              ? "bg-[#ffffff] text-[#3D4E3C]"
+                              : "bg-[#3D4E3C]"
+                          }`}
+                        >
+                          <FaPlus
+                            className={`md:text-sm transform transition-all duration-500 ease-in-out ${
+                              open
+                                ? "rotate-45 opacity-0 scale-75"
+                                : "rotate-0 opacity-100 scale-100"
+                            }`}
+                          />
+                          <FaTimes
+                            className={`md:text-sm absolute transform transition-all duration-500 ease-in-out ${
+                              open
+                                ? "rotate-0 opacity-100 scale-100"
+                                : "-rotate-45 opacity-0 scale-75"
+                            }`}
+                          />
                         </span>
                       </DisclosureButton>
+
+                      {/* the answer  */}
+                      {/* Panel */}
                       <DisclosurePanel static>
                         {({ open }) => (
                           <div
                             className={`mt-3 text-sm sm:text-base text-[#23311c] font-normal leading-relaxed transition-all duration-700 ease-in-out overflow-hidden ${
                               open
-                                ? "max-h-[200px] opacity-100"
+                                ? "max-h-[500px] opacity-100"
                                 : "max-h-0 opacity-0"
                             }`}
                             style={{

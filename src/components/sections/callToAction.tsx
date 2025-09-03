@@ -71,8 +71,8 @@ const callToAction = () => {
                     <Image
                       src="/Appstorecall.png"
                       loading="lazy"
-                      width={200}
-                      height={100}
+                      width={400}
+                      height={200}
                       className="max-w-40"
                       alt=""
                     />
@@ -81,8 +81,8 @@ const callToAction = () => {
                     <Image
                       src="/Applestore.png"
                       loading="lazy"
-                      width={200}
-                      height={100}
+                      width={400}
+                      height={200}
                       className="max-w-40"
                       alt=""
                     />
@@ -128,13 +128,12 @@ const callToAction = () => {
 
             <div className="h-full flex items-center justify-between  gap-4 mt-4">
               <div className="relative flex flex-col md:flex-row gap-4 mt-4 mb-16 sm:mb-20 md:mb-0">
-               
                 <Link href={errigo.android}>
                   <Image
                     src="/Appstorecall.png"
                     loading="lazy"
-                    width={200}
-                    height={100}
+                    width={300}
+                    height={150}
                     className="max-w-40"
                     alt=""
                   />
@@ -143,8 +142,8 @@ const callToAction = () => {
                   <Image
                     src="/Applestore.png"
                     loading="lazy"
-                    width={200}
-                    height={100}
+                    width={300}
+                    height={150}
                     className="max-w-40"
                     alt=""
                   />
