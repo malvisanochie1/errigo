@@ -50,7 +50,7 @@ export default function MobileMeals() {
         <section className="w-full pt-16 pb-5 bg-gradient-to-br from-[#F6FBF1]  to-[#D0DFB7] rounded-3xl p-2 md:p-12  flex flex-col items-center">
           <div className="text-[#5C7937] text-center text-base font-semibold mb-2">
             Become Our{" "}
-            <span className="ms-1 px-1.5 py-0.5 rounded-lg bg-[#FEEAC7]">
+            <span className="ms-1 px-1.5 py-0.5 rounded-lg bg-[#FEEAC7] font-bold">
               Customer{" "}
             </span>{" "}
           </div>
@@ -78,17 +78,17 @@ export default function MobileMeals() {
               interval={3000}
               renderItem={(item) => (
                 <>
-                <div>
-                <div className="flex justify-center w-full">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={350}
-                    height={350}
-                    className="rounded-2xl object-cover w-full h-[250px]-"
-                  />
-                </div>
-              </div>
+                  <div>
+                    <div className="flex justify-center w-full">
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        width={550}
+                        height={350}
+                        className="rounded-2xl object-cover min-w-full h-[250px]-"
+                      />
+                    </div>
+                  </div>
                 </>
               )}
             />
@@ -131,9 +131,9 @@ export default function MobileMeals() {
                   <Image
                     src={item.src}
                     alt="Grocery delivery"
-                    width={350}
+                    width={550}
                     height={350}
-                    className="rounded-2xl object-cover w-full h-[250px]-"
+                    className="rounded-2xl object-cover min-w-full h-[250px]-"
                   />
                 </div>
                 <div>
@@ -156,7 +156,7 @@ export default function MobileMeals() {
         <section className="w-full pt-16 pb-5 bg-gradient-to-br from-[#F6FBF1]  to-[#D0DFB7] rounded-3xl p-2 md:p-12  flex flex-col items-center">
           <div className="text-[#5C7937] text-center text-base font-semibold mb-2">
             Become Our{" "}
-            <span className="ms-1 px-1.5 py-0.5 rounded-lg bg-[#FEEAC7]">
+            <span className="ms-1 px-1.5 py-0.5 rounded-lg bg-[#FEEAC7] font-bold">
               Rider{" "}
             </span>{" "}
           </div>
@@ -179,17 +179,17 @@ export default function MobileMeals() {
             items={rider}
             interval={3000}
             renderItem={(item) => (
-              <div>
+              <>
                 <div className="flex justify-center w-full">
                   <Image
                     src={item.src}
                     alt={item.alt}
-                    width={350}
+                    width={550}
                     height={350}
-                    className="rounded-2xl object-cover w-full h-[250px]-"
+                    className="rounded-2xl object-cover min-w-full h-[250px]-"
                   />
                 </div>
-              </div>
+              </>
             )}
           />
         </section>
