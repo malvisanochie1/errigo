@@ -6,7 +6,7 @@ const callToAction = () => {
   return (
     <div className="w-full p-3 sm:p-8">
       <div
-        className="relative w-full rounded-xl overflow-hidden min-h-[417px]- flex items-center justify-center"
+        className="hidden relative w-full rounded-xl overflow-hidden min-h-[417px]- sm:flex items-center justify-center"
         style={{
           background: "linear-gradient(90deg, #F7C16B 0%, #F7C16B 100%)",
         }}
@@ -102,6 +102,67 @@ const callToAction = () => {
             </div>
           </div>
           {/* content */}
+        </div>
+      </div>
+
+      <div className="sm:hidden">
+        <div className="relative w-full">
+          {/* Background Image */}
+          <Image
+            src="/Call_to_action_bg.png"
+            alt="background image"
+            fill
+            className="object-cover object-center- object-bottom z-10 rounded-2xl"
+          />
+
+          {/* Content */}
+          <div className="relative w-full py-10 px-4 z-20 min-h-[335px] flex flex-col justify-center">
+            <div>
+              <h2 className="text-3xl font-bold text-[#292929]">
+                Download the app
+              </h2>
+              <p className="text-sm font-medium text-[#333333] my-5">
+                Get your first meal in 10 minutes
+              </p>
+            </div>
+
+            <div className="h-full flex items-center justify-between  gap-4 mt-4">
+              <div className="relative flex flex-col md:flex-row gap-4 mt-4 mb-16 sm:mb-20 md:mb-0">
+               
+                <Link href={errigo.android}>
+                  <Image
+                    src="/Appstorecall.png"
+                    loading="lazy"
+                    width={200}
+                    height={100}
+                    className="max-w-40"
+                    alt=""
+                  />
+                </Link>
+                <Link href={errigo.ios}>
+                  <Image
+                    src="/Applestore.png"
+                    loading="lazy"
+                    width={200}
+                    height={100}
+                    className="max-w-40"
+                    alt=""
+                  />
+                </Link>
+              </div>
+              <div className="h-full flex items-center relative mb-8">
+                <Image
+                  loading="lazy"
+                  src="/Key-Icons.png"
+                  className="md:hidden max-h-20  max-w-20 md:max-w-40 object-fit rounded-xl bg-[#FAFFFA33]"
+                  width={50}
+                  height={10}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="h-[135px] w-full"></div>
+          </div>
         </div>
       </div>
     </div>
