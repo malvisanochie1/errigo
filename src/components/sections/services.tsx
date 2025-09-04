@@ -70,7 +70,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Chef-Prepared Meals
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Organic Fruits & Veggies
                   </p>
                 </div>
@@ -106,7 +106,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Fruits from stores close to you
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Ingredients from all round
                   </p>
                 </div>
@@ -143,7 +143,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Well cooked afro Caribbean meals
                   </p>
                 </div>
@@ -162,7 +162,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Live update on delivery
                   </p>
                 </div>
@@ -180,7 +180,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     24/7 customer support
                   </p>
                 </div>
@@ -198,7 +198,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2">
+                  <p className="text-base text-[#374a3d] max-w-2xl mx-auto p-2 md:text-lg font-bold">
                     Keto, Vegan, Gluten-Filtered
                   </p>
                 </div>

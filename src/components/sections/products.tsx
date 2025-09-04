@@ -26,7 +26,7 @@ const Products = () => {
     <div id="products" className="">
       <div className="hidden md:block bg-gradient-to-b from-[#FAFFFA] to-[#ffffff] pt-10 px-4- md:px-8">
         <section className="w-full py-16 bg-gradient-to-br from-[#F6FBF1]  to-[#D0DFB7] rounded-3xl p-8 md:p-12  flex flex-col items-center">
-          <div className="bg-[#FAFFFA] rounded-2xl border-2 border-[#a4bf7b8f] shadow-lg px-4 py-2 flex items-center justify-center gap-8 shadow-[hsl(84,34%,56%)] mb-8">
+          <div className="bg-[#FAFFFA] rounded-2xl border-2 border-[#a4bf7b8f] shadow-lg- px-4 py-2 flex items-center justify-center gap-8 shadow-[hsl(84,34%,56%)] mb-8">
             {tabButton("Customer", "customer")}
             {tabButton("Partner", "partner")}
             {tabButton("Courier", "courier")}

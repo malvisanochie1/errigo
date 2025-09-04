@@ -8,38 +8,19 @@ const callToAction = () => {
       <div
         className="hidden relative w-full rounded-xl overflow-hidden min-h-[417px]- sm:flex items-center justify-center"
         style={{
-          background: "linear-gradient(90deg, #F7C16B 0%, #F7C16B 100%)",
-        }}
+    backgroundImage: "url('/Container-call-to.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+
       >
-        {/* Background image */}
-        <Image
-          src="/Noise.png"
-          alt="Call to Action background"
-          fill
-          style={{ objectFit: "cover", opacity: 0.7 }}
-          className="absolute inset-0 h-full w-40"
-          priority
-        />
+        
         {/* Overlay content */}
-        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-w-full h-full  bg-[#F59E0B] from-[#FDD28A] via-[#FCBB4D] to-[#F59E0B]">
-          <Image
-            loading="lazy"
-            src="/healthy-cuisine.png"
-            className="absolute left-0 -bottom-[64px] sm:-bottom-10 md:bottom-0 max-w-2xl md:max-w-xl lg:max-w-3xl object-cover"
-            width={1000}
-            height={100}
-            alt=""
-          />
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-w-full h-full  bg-[#F59E0B]- from-[#FDD28A]- via-[#FCBB4D]- to-[#F59E0B]-">
 
-          <Image
-            priority
-            src="/background.png"
-            className="absolute  w-full object-cover"
-            fill
-            alt=""
-          />
+        
 
-          <div className="absolute h-full w-full bg-gradient-to-t from-[#fdd38ad3] via-[#fcbc4d83] to-[#F59E0B]">
+          <div className="absolute h-full w-full bg-gradient-to-t- from-[#fdd38ad3]- via-[#fcbc4d83]- to-[#F59E0B]-">
             {" "}
           </div>
           {/* content */}
@@ -109,7 +90,7 @@ const callToAction = () => {
         <div className="relative w-full">
           {/* Background Image */}
           <Image
-            src="/Call_to_action_bg.png"
+            src="/Call_to_action_bg.png-"
             alt="background image"
             fill
             className="object-cover object-center- object-bottom z-10 rounded-2xl"

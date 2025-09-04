@@ -99,7 +99,7 @@ export default function Faqs() {
             question <span className="font-normal=">(FAQS)</span>
           </h2>
         </div>
-        <div className="space-y-6 overflow-y-auto md:max-h-[430px] md:pr-16 mr-2- md:faqs-scroll faqs-scroll md:col-span-8">
+        <div className="space-y-6 overflow-y-auto md:max-h-[460px] md:pr-16 mr-2- md:faqs-scroll faqs-scroll md:col-span-8">
           {faqs.map((faq, idx) => (
             <Disclosure key={faq.question}>
               {({ open }) => (
@@ -122,9 +122,9 @@ export default function Faqs() {
                         >
                           {/* number eg 01 */}
                           <div
-                            className={`text-lg sm:text-xl md:text-3xl font-bold md:mr-6 min-w-[30px] md:min-w-[48px] text-[#A5B3A2] transition-all duration-500 ease-in-out ${
+                            className={`text-2xl sm:text-xl md:text-3xl font-bold md:mr-6 min-w-[30px] md:min-w-[48px] text-[#D0DFB7] transition-all duration-500 ease-in-out ${
                               open &&
-                              "scale-105 text-lg sm:text-lg md:text-xl text-[#fff]"
+                              "scale-105 text-xl sm:text-2xl md:text-3xl text-[#fff]"
                             }`}
                           >
                             {String(idx + 1).padStart(2, "0")}
@@ -133,7 +133,7 @@ export default function Faqs() {
                           {/* the questions*/}
                           <span
                             className={`text-base grid place-content-center sm:text-lg font-medium text-[#3D4E3C] text-left transition-colors duration-500 ease-in-out ${
-                              open && "ps-1 max-w-44-"
+                              open && "ps-1"
                             }`}
                           >
                             <h3 className={` ${open && "truncate"} `}>
@@ -146,21 +146,21 @@ export default function Faqs() {
 
                         {/* Icon toggle */}
                         <span
-                          className={`ml-4  p-1.5 md:p-2 rounded-full text-xs sm:text-sm md:text-base flex items-center justify-center relative ${
+                          className={`ml-4  p-0.5 md:p-1 rounded-full text-xs sm:text-sm md:text-base flex items-center justify-center relative ${
                             open
-                              ? "bg-[#ffffff] text-[#3D4E3C]"
-                              : "bg-[#3D4E3C]"
+                              ? "bg-[#ffffff] text-[#779949]"
+                              : "bg-[#779949]"
                           }`}
                         >
                           <FaPlus
-                            className={`md:text-sm transform transition-all duration-500 ease-in-out ${
+                            className={` md:text-xs transform transition-all duration-500 ease-in-out ${
                               open
                                 ? "rotate-45 opacity-0 scale-75"
                                 : "rotate-0 opacity-100 scale-100"
                             }`}
                           />
                           <FaTimes
-                            className={`md:text-sm absolute transform transition-all duration-500 ease-in-out ${
+                            className={`md:text-xs absolute transform transition-all duration-500 ease-in-out ${
                               open
                                 ? "rotate-0 opacity-100 scale-100"
                                 : "-rotate-45 opacity-0 scale-75"
