@@ -8,18 +8,13 @@ const callToAction = () => {
       <div
         className="hidden relative w-full rounded-xl overflow-hidden min-h-[417px]- sm:flex items-center justify-center"
         style={{
-    backgroundImage: "url('/Container-call-to.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
-
+          backgroundImage: "url('/Container-call-to.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
-        
         {/* Overlay content */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-w-full h-full  bg-[#F59E0B]- from-[#FDD28A]- via-[#FCBB4D]- to-[#F59E0B]-">
-
-        
-
           <div className="absolute h-full w-full bg-gradient-to-t- from-[#fdd38ad3]- via-[#fcbc4d83]- to-[#F59E0B]-">
             {" "}
           </div>
@@ -90,7 +85,7 @@ const callToAction = () => {
         <div className="relative w-full">
           {/* Background Image */}
           <Image
-            src="/Call_to_action_bg.png-"
+            src="/Call_to_action_bg.png"
             alt="background image"
             fill
             className="object-cover object-center- object-bottom z-10 rounded-2xl"
@@ -99,10 +94,10 @@ const callToAction = () => {
           {/* Content */}
           <div className="relative w-full py-10 px-4 z-20 min-h-[335px] flex flex-col justify-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#292929]">
+              <h2 className="text-[32px] font-bold text-[#292929]">
                 Download the app
               </h2>
-              <p className="text-sm font-medium text-[#333333] my-5">
+              <p className="text-base font-medium text-[#333333] my-5">
                 Get your first meal in 10 minutes
               </p>
             </div>
