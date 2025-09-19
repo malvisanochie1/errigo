@@ -5,7 +5,7 @@ import { errigo } from "../texts/constants";
 
 const hero = () => {
   return (
-    <div className="rounded-b-2xl lg:rounded-b-4xl">
+    <div className="rounded-b-2xl lg:rounded-b-4xl overflow-x-hidden">
       <section className=" relative flex flex-col items-center justify-center bg-[url('/pattern.png')] bg-cover bg-center rounded-b-2xl lg:rounded-b-4xl">
         <div className="rounded-b-2xl lg:rounded-b-4xl absolute inset-0 bg-gradient-to-r from-[#d0dfb7a4] via-[#B1CA8C] to-[#97b569a8] opacity-100 pointer-events-none"></div>
         <section className="relative z-10 px-4 md:px-20  w-full h-full flex flex-col items-center justify-center pt-4 md:pt-10 overflow-y-hidden rounded-b-2xl lg:rounded-b-4xl">

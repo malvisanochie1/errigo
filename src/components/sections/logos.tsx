@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 export default function LogoCarousel() {
   return (
-    <div className="bg-white px-4 md:px-10 py-4 border-t border-blue-200">
+    <div className="bg-white px-4 md:px-10 py-4">
       {/* Heading */}
       <p className="text-center text-[#292929] font-semibold text-sm mb-4">
         Trusted by 2000+ businesses to scale outbound sales and drive new
