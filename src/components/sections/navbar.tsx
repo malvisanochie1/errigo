@@ -21,7 +21,7 @@ const Navbar = () => {
     <ul className="font-semibold text-[#292929] hover-[#96b569] flex flex-col lg:flex-row justify-center items-center space-y-10  h-full lg:space-y-0 lg:space-x-6  bg-gradient-to-t md:bg-gradient-to-b from-[#fafffa49] to-[#FAFFFA] rounded-2xl px-10 py-3 md:border-t border-[#FAFFFA] sticky">
       {NAV_ITEMS.map((item) => (
         <li key={item.id}>
-          <a
+          <Link
             href={`#${item.id}`}
             className={
               activeSection === item.id
@@ -30,9 +30,22 @@ const Navbar = () => {
             }
           >
             {item.label}
-          </a>
+          </Link>
         </li>
       ))}
+      <li>
+        <Link
+          href="https://blog.eriggo.com/"
+          target="_blank"
+          className={
+            activeSection === "https://blog.eriggo.com/"
+              ? "border-b-2 rounded-4xl border-[#96b569] px-2 pb-1.5 text-[#96b569]"
+              : "transition-colors duration-300 ease-in-out hover:text-[#96b569]"
+          }
+        >
+          Blog{" "}
+        </Link>
+      </li>
     </ul>
   );
 
@@ -77,7 +90,10 @@ const Navbar = () => {
       <nav>
         <div className="flex items-center justify-between bg-gradient-to-r from-[#d0dfb7a4] via-[#B1CA8C] to-[#97b569a8] px-6 md:px-16 py-6 lg:pt-6 ">
           {/* logo */}
-          <Link href="/" className="text-[25px] leading-0 font-bold font-Montserrat flex items-center gap-2 text-[#3D4E3C]">
+          <Link
+            href="/"
+            className="text-[25px] leading-0 font-bold font-Montserrat flex items-center gap-2 text-[#3D4E3C]"
+          >
             <Image
               src="/favi.png"
               width={27}

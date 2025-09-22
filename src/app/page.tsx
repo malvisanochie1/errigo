@@ -28,8 +28,8 @@ const page = () => {
       <div className="mx-auto container">
         <Faqs />
       </div>
-      <Testimonial /> 
-      <CallToAction /> 
+      <Testimonial />
+      <CallToAction />
       <Footer />{" "}
     </div>
   );
