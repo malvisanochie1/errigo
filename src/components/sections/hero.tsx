@@ -51,18 +51,6 @@ const hero = () => {
                     errigo app now.
                   </h3>
                 </div>
-                <div className="mx-auto">
-                  <span className="md:hidden flex space-x-2 items-center w-fit ps-3">
-                    {" "}
-                    <Image
-                      width={50}
-                      height={50}
-                      src="/smiling _emoji.png"
-                      alt=""
-                    />
-                    <Image width={50} height={50} src="/cup_emoji.png" alt="" />{" "}
-                  </span>
-                </div>
                 {/* Downloads */}
                 <div className="grid grid-cols-2 gap-y-4">
                   <div className="flex gap-4 items-center order-2 lg:order-1 col-span-2 mx-auto lg:mx-0">
