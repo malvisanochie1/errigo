@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { errigo } from "../texts/constants";
-
 const hero = () => {
   return (
     <div className="rounded-b-2xl lg:rounded-b-4xl overflow-x-hidden">
