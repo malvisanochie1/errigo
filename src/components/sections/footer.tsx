@@ -37,7 +37,7 @@ const footer = () => {
                       <Link href="/#customer">Customer</Link>{" "}
                     </li> */}
                     <li className="font-semibold">
-                      <Link href="/#products">Vendor</Link>{" "}
+                      <Link href="https://dashboard.eriggo.com/vendor-signup" target="blank">Vendor</Link>{" "}
                     </li>
                     <li className="font-semibold">
                       <Link href="/#products">Rider</Link>{" "}

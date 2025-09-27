@@ -45,7 +45,7 @@ const hero = () => {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-lg md:text-xl lg:text-2xl- text-[#262F25] lg:text-start font-semibold">
-                    Hot meals, farm-fresh fruits, 
+                    Hot meals, farm-fresh fruits, <br className="sm:hidden" />
                     and groceries. <br className="hidden lg:inline" /> Download
                     errigo app now.
                   </h3>
