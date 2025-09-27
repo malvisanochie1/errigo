@@ -5,7 +5,7 @@ export const errigo = {
   support: "#",
   android: "#",
   ios: "#",
-  partner: "#",
+  partner: "https://app.eriggo.com/vendor-signup",
   rider: "#",
   socials: {
     twitter: "#",

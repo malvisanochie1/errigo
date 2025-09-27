@@ -101,6 +101,7 @@ const Products = () => {
                 </p>
                 <Link
                   href={errigo.partner}
+                  target="blank"
                   className="bg-[#374a3d] text-white px-6 py-3 rounded-xl font-bold shadow hover:bg-[#2c3a2f] transition text-sm flex items-baseline w-fit mx-auto"
                 >
                   Partner with us{" "}
