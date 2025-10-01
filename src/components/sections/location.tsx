@@ -196,11 +196,11 @@ const Location = () => {
           </p>
         </div>
       </div>
-      <div>
-        <div className="grid grid-cols-12 md:gap-x-8 gap-y-6">
+      <div className="w-full px-3 md:px-0 ">
+        <div className="grid grid-cols-12 md:gap-x-8 gap-y-6 w-full">
           <div className="md:col-span-7 lg:col-span-8 col-span-12 w-full">
             <div
-              className="relative bg-[#F0F5E8] rounded-3xl p-6- flex items-center justify-center h-full w-full"
+              className="relative bg-[#F0F5E8] rounded-3xl p-6- flex items-center justify-center h-full w-full "
               style={{ minHeight: 400 }}
             >
               <Image
