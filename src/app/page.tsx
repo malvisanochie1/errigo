@@ -28,7 +28,9 @@ const page = () => {
       <div className="mx-auto container">
         <Faqs />
       </div>
-      <Testimonial />
+      <div className="hidden">
+        <Testimonial />
+      </div>
       <CallToAction />
       <Footer />{" "}
     </div>

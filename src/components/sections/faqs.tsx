@@ -7,65 +7,97 @@ import { FaPlus, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 const faqs = [
   {
-    question: "How do I create a business eriggo account",
-    answer:
-      "To create a business eriggo account, visit our website and follow the sign-up instructions for business users.",
+    question: "What is Eriggo?",
+    answer: "Eriggo is an online platform that connects customers with restaurants, caterers, personal shoppers, and local food vendors. You can order food, book catering, or get a personal shopper to shop for fresh groceries, all in one app."
   },
   {
-    question: "How fast is delivery in my area?",
-    answer:
-      "Delivery times vary by location. Enter your address on our app or website to see estimated delivery times.",
+    question: "How does Eriggo work?",
+    answer: "Simple! Customers place orders through the app or website, vendors receive and fulfill those orders, and Eriggo handles the payments and logistics so everyone gets value with ease."
   },
   {
-    question: "Can I customize meals for dietary needs?",
-    answer:
-      "Yes, you can customize your meals during checkout to fit your dietary preferences.",
+    question: "Is Eriggo available nationwide?",
+    answer: "We’re starting with select cities and expanding rapidly across Nigeria. You’ll soon be able to use Eriggo anywhere local food is loved, which is everywhere!"
   },
   {
-    question: "How do I track my order?",
-    answer:
-      "Track your order in real-time from your account dashboard or via the tracking link sent to your email.",
+    question: "Is Eriggo safe and reliable?",
+    answer: "Absolutely. All vendors are verified, trained, and certified by Eriggo in hygiene and food handling. Payments are processed securely, and we ensure every transaction is safe and traceable."
   },
   {
-    question: "What if I need to cancel or change my order?",
-    answer:
-      "You can cancel or change your order before it is prepared. Visit your orders page or contact support for help.",
+    question: "How do I contact Eriggo support?",
+    answer: "You can reach us via the in-app support chat, email (customercare@eriggo.com), or call our hotline (coming soon). We’re always here to help."
   },
   {
-    question: "Is there a minimum order amount?",
-    answer:
-      "Yes, there is a minimum order amount depending on your location. Please check the app for details.",
+    question: "How do I order on Eriggo?",
+    answer: "Download the Eriggo app, browse through restaurants, caterers, or shoppers near you, add items to your cart, and check out. Easy as that."
   },
   {
-    question: "Can I schedule orders in advance?",
-    answer:
-      "Absolutely! You can schedule your orders for a future date and time during checkout.",
+    question: "How can I pay for my order?",
+    answer: "You can pay securely using your debit card, bank transfer, or wallet balance on the app. Eriggo holds the payment until your order is confirmed as delivered."
   },
   {
-    question: "What payment methods are accepted?",
-    answer:
-      "We accept credit/debit cards, mobile payments, and select digital wallets.",
+    question: "What happens if my order is late or missing an item?",
+    answer: "Don’t worry. Our support team will quickly resolve it. We follow up with vendors and delivery partners to make sure you get what you paid for, or a refund if needed."
   },
   {
-    question: "How do I apply a promo code?",
-    answer:
-      "Enter your promo code at checkout to receive your discount. Only one code can be used per order.",
+    question: "Can I schedule an order in advance?",
+    answer: "Yes! You can pre-order meals or catering for a later date, perfect for parties, meetings, or Sunday rice days."
   },
   {
-    question: "Can I order from multiple restaurants at once?",
-    answer:
-      "Currently, each order can only be placed with one restaurant at a time.",
+    question: "Can I rate vendors?",
+    answer: "Definitely. Ratings help us maintain quality and reward vendors who deliver the best service."
   },
   {
-    question: "How do I contact customer support?",
-    answer:
-      "You can reach our support team via live chat, email, or phone. Visit the Contact Us page for details.",
+    question: "How do I become a vendor on Eriggo?",
+    answer: "Simply visit www.eriggo.com or click “Partner”. Fill out your business details, and you’re all set after verification."
   },
   {
-    question: "Are there loyalty rewards or referral bonuses?",
-    answer:
-      "Yes! Earn points for every order and get bonuses for referring friends. Check your account for more info.",
+    question: "What kind of vendors can join?",
+    answer: "We welcome restaurants, caterers, home chefs, bakers, and personal shoppers. If you sell quality food or food-related services, Eriggo is your home."
   },
+  {
+    question: "How does payment work for vendors?",
+    answer: "Customers pay Eriggo directly, and we remit your payment after the order is completed, no stress about unpaid or fake transfers."
+  },
+  {
+    question: "Does Eriggo offer training or certification?",
+    answer: "Yes! All Eriggo vendors receive free training and certification on food hygiene, safety, and handling. It’s part of our quality assurance process."
+  },
+  {
+    question: "How does Eriggo help vendors grow?",
+    answer: "We promote your business to thousands of potential customers, provide marketing support, and ensure seamless payments so you can focus on cooking, not chasing payments."
+  },
+  {
+    question: "How do I manage my orders?",
+    answer: "You’ll have access to your own vendor dashboard where you can update your menu, track sales, accept or reject orders, and monitor earnings."
+  },
+  {
+    question: "Are there any fees to join Eriggo?",
+    answer: "Registration is free. We only charge a small commission per completed order, so you only pay when you earn."
+  },
+  {
+    question: "How do I get more visibility on the app?",
+    answer: "Vendors with great reviews, quick response times, and consistent quality are featured more prominently. You can also join Eriggo’s promo campaigns."
+  },
+  {
+    question: "Who handles delivery?",
+    answer: "Eriggo partners with trusted logistics providers and riders to ensure fast, safe, and affordable delivery."
+  },
+  {
+    question: "Can vendors use their own delivery team?",
+    answer: "Yes, vendors can choose to handle deliveries themselves or use Eriggo’s delivery partners, whichever works best for your business."
+  },
+  {
+    question: "How long does delivery take?",
+    answer: "Delivery time varies based on location and order type, but most local deliveries arrive within 30–60 minutes."
+  },
+  {
+    question: "Can I use Eriggo for bulk or corporate orders?",
+    answer: "Absolutely. Businesses can place large orders, plan catering, or partner with us for office meal programs."
+  },
+  {
+    question: "What makes Eriggo different?",
+    answer: "Eriggo celebrates African food culture. From jollof to okpa, suya to amala — we connect people with the tastes they love while supporting small food businesses to grow."
+  }
 ];
 
 export default function Faqs() {
