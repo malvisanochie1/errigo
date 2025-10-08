@@ -13,7 +13,7 @@ const page = () => {
   return (
     <div className="bg-white text-gray-600">
       <Navbar />
-      <div className="py-10 md:py-20 px-3">
+      <div className="py-5 sm:py-10 md:py-20 px-3">
         <div className="max-w-lg w-full border min-h-screen mx-auto p-3 md:p-5 rounded-2xl">
           <div className="p-10 rounded-full grid place-content-center bg-amber-300 w-fit mx-auto">
             <Image
