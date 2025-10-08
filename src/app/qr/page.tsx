@@ -71,7 +71,7 @@ const page = () => {
             </Link>
             <Link
               className=" text-gray-200 w-full rounded-2xl font-semibold"
-              href={"#"}
+              href="https://app.eriggo.com/vendor-signup"
             >
               <div className="w-full py-2.5 sm:py-3 md:py-4 rounded-2xl px-4 sm:px-6 hover:bg-[#5C7937]/80 flex justify-between items-center ease-in-out duration-300 transition bg-[#5C7937]/10 text-[#5C7937] hover:text-gray-200 text-lg">
                 <span>Vendor Signup</span>
