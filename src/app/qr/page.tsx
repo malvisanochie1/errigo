@@ -15,7 +15,7 @@ const page = () => {
       <Navbar />
       <div className="py-5 sm:py-10 md:py-20 px-3">
         <div className="max-w-lg w-full border pb-4 mx-auto p-3 md:p-5 rounded-2xl">
-          <div className="w-28 sm:w-32 md:w-[132px] h-28 sm:h-32 md:h-[132px] rounded-full grid place-content-center bg-[#5C7937] w-fit- mx-auto">
+          <div className="w-28 sm:w-32 md:w-[132px] h-28 sm:h-32 md:h-[132px] rounded-full grid place-content-center bg-[#5C7937] w-fit- mx-auto border-3 border-[#a4c17a]">
             <div>
               <Image
               width={100}
