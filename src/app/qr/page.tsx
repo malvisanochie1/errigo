@@ -28,7 +28,7 @@ const page = () => {
             EriggoApp
           </h1>
           <p className="text-lg md:text-xl text-center">
-            Welcome to Queek😊 Nigeria's on-demand app delivering food,
+            Welcome to Queek😊 Nigeria&#39;s on-demand app delivering food,
             groceries, services & more in 30-40 minutes
           </p>
           <div className="flex justify-center gap-4 mt-6">
