@@ -15,18 +15,15 @@ const page = () => {
       <Navbar />
       <div className="py-5 sm:py-10 md:py-20 px-3">
         <div className="max-w-lg w-full border pb-4 mx-auto p-3 md:p-5 rounded-2xl">
-          <div className="w-28 sm:w-32 md:w-[132px] h-28 sm:h-32 md:h-[132px] rounded-full grid place-content-center bg-[#5C7937] w-fit- mx-auto border-3 sm:border-2 border-[#a4c17a]">
-            <div>
+          <div className="w-28 sm:w-32 md:w-[132px] h-28 sm:h-32 md:h-[132px] rounded-full grid place-content-center mx-auto border-3 sm:border-2 border-[#a4c17a]">
+            <div className="w-full">
               <Image
-                width={100}
-                height={100}
-                src="/favi.png"
-                className="max-w-6 mx-auto"
+                width={500}
+                height={500}
+                src="/the.png"
+                className="rounded mx-auto w-96"
                 alt=""
               />
-              <h1 className="text-center text-[#a4c17a] text-xl md:text-2xl font-bold py-1 sm:py-2">
-                eriggo
-              </h1>
             </div>
           </div>
           <h1 className="text-center text-[#5C7937] text-xl md:text-2xl font-bold py-2 sm:py-3 md:py-4">
