@@ -30,8 +30,8 @@ const page = () => {
             EriggoApp
           </h1>
           <p className="text-lg md:text-xl text-center">
-            Welcome to Eriggo😊 Nigeria&#39;s on-demand app delivering food,
-            groceries, services & more in 30-40 minutes
+            A platform delivering homemade and authentic Afro-Caribbean food and
+            foodstuff{" "}
           </p>
           <div className="flex justify-center gap-4 mt-6">
             <Link
