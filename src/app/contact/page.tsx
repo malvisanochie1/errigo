@@ -1,13 +1,17 @@
-import { Mail, MapPin, Phone } from "lucide-react"
-
-export default function ContactPage() {
+import { Mail, MapPin, Phone } from "lucide-react";
+import Faqs from "@/components/sections/faqs";
+const page = () => {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#C4D96F] to-[#D4E89F] flex items-center justify-center p-4">
-      <div className="w-full max-w-2xl">
+    <main className=" bg-gradient-to-b from-[#C4D96F] to-[#f3ffea] flex flex-col items-center justify-center p-4">
+      <div className="w-full max-w-2xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-3">Get in Touch</h1>
-          <p className="text-lg text-[#4a4a4a]">We&#39;d love to hear from you. Reach out to us anytime.</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-3">
+            Get in Touch
+          </h1>
+          <p className="text-lg text-[#4a4a4a]">
+            We&#39;d love to hear from you. Reach out to us anytime.
+          </p>
         </div>
 
         {/* Contact Cards */}
@@ -19,7 +23,9 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6 text-[#1a1a1a]" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-2">Address</h2>
+                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-2">
+                  Address
+                </h2>
                 <p className="text-[#4a4a4a] leading-relaxed">
                   123 Food Street
                   <br />
@@ -38,7 +44,9 @@ export default function ContactPage() {
                 <Phone className="w-6 h-6 text-[#1a1a1a]" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-2">Phone</h2>
+                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-2">
+                  Phone
+                </h2>
                 <a
                   href="tel:+2341234567890"
                   className="text-[#C4D96F] hover:text-[#B0C85F] font-medium transition-colors text-lg"
@@ -56,7 +64,9 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6 text-[#1a1a1a]" />
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-2">Email</h2>
+                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-2">
+                  Email
+                </h2>
                 <a
                   href="mailto:support@eriggo.com"
                   className="text-[#C4D96F] hover:text-[#B0C85F] font-medium transition-colors text-lg"
@@ -67,12 +77,16 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-
         {/* Footer Message */}
-        <div className="text-center text-[#4a4a4a]">
+      </div>
+      <div>
+        <Faqs />
+        <div className="text-center text-[#4a4a4a] mt-5 sm:mt-10 lg:mt-14">
           <p className="text-sm">We typically respond within 24 hours</p>
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
+
+export default page;

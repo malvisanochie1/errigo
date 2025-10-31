@@ -20,7 +20,9 @@ const footer = () => {
           <div className="container mx-auto">
             <div className="px- mx-auto p-4 h-full flex flex-col md:flex-row space-y-4 md:space-x-10 relative">
               <div className="md:w-4/12 relative">
-                <Link href="/" className="text-2xl font-bold mb-4">Eriggo</Link>
+                <Link href="/" className="text-2xl font-bold mb-4">
+                  Eriggo
+                </Link>
                 <p className="md:text-base text-gray-400">
                   {" "}
                   A digital platform that allows you satisfy all your cravings
@@ -37,7 +39,9 @@ const footer = () => {
                       <Link href="/#customer">Customer</Link>{" "}
                     </li> */}
                     <li className="font-semibold">
-                      <Link href={errigo.partner} target="blank">Vendor</Link>{" "}
+                      <Link href={errigo.partner} target="blank">
+                        Vendor
+                      </Link>{" "}
                     </li>
                     <li className="font-semibold">
                       <Link href="/#products">Rider</Link>{" "}
@@ -53,13 +57,13 @@ const footer = () => {
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
                     <li className="font-semibold">
-                      <Link href="/Privacy_policy">Privacy policy</Link>{" "}
+                      <Link href="/privacy_policy">Privacy policy</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="/Term_of_use">Term of use</Link>{" "}
+                      <Link href="/term_of_use">Term of use</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="/Refund_policy">Refund policy</Link>{" "}
+                      <Link href="/refund_policy">Refund policy</Link>{" "}
                     </li>
                   </ul>
                 </div>
@@ -97,9 +101,15 @@ const footer = () => {
                 </div>
               </div>
             </div>
-            <hr className="border-2- mb-5 sm:my-10 border-[#E3E2E2]"/>
+            <hr className="border-2- mb-5 sm:my-10 border-[#E3E2E2]" />
             <div className="h-64- px-2">
-              <Image width={1000} height={400} className="object-scale-down relative mx-auto" src="/footer_logo.png" alt="" />
+              <Image
+                width={1000}
+                height={400}
+                className="object-scale-down relative mx-auto"
+                src="/footer_logo.png"
+                alt=""
+              />
             </div>
           </div>
 
