@@ -35,9 +35,7 @@ const footer = () => {
                     Company
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
-                    {/* <li className="font-semibold">
-                      <Link href="/#customer">Customer</Link>{" "}
-                    </li> */}
+                  
                     <li className="font-semibold">
                       <Link href={errigo.partner} target="blank">
                         Vendor
