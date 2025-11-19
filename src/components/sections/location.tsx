@@ -228,9 +228,7 @@ const Location = () => {
                   aria-label={country.name}
                   style={{ zIndex: 2 }}
                 >
-                  <span
-                  // className={`w-7 h-7 ${country.color} rounded-full flex items-center justify-center border-4 border-white shadow-lg `}
-                  >
+                  <span>
                     <Image
                       src={country.img}
                       width={40}

@@ -81,7 +81,6 @@ const hero = () => {
                   <div className="order-1 lg:order-2 col-span-2 mx-auto lg:mx-0">
                     {/* Happy Customers Section */}
                     <div className="flex items-center gap-3 rounded-full  py-2 w-fit">
-                      {/* Avatars */}
                       <div className="flex -space-x-3">
                         <div className="rounded-full border border-[#F3F6F3] bg-[#D6D6E1]">
                           <Image
