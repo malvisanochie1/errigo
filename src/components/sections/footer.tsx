@@ -77,7 +77,7 @@ const footer = () => {
                       <Link href="#">Tiktok</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="#">X</Link>{" "}
+                      <Link href="#">X</Link>
                     </li>
                   </ul>
                 </div>
