@@ -15,8 +15,6 @@ const footer = () => {
             alt=""
           />
           <div className=" absolute w-full h-full bg-[#141A14]/95"></div>
-          {/* content */}
-
           <div className="container mx-auto">
             <div className="px- mx-auto p-4 h-full flex flex-col md:flex-row space-y-4 md:space-x-10 relative">
               <div className="md:w-4/12 relative">
@@ -35,7 +33,6 @@ const footer = () => {
                     Company
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
-                  
                     <li className="font-semibold">
                       <Link href={errigo.partner} target="blank">
                         Vendor
@@ -110,8 +107,6 @@ const footer = () => {
               />
             </div>
           </div>
-
-          {/* End of content  */}
         </div>
       </div>
     </section>
