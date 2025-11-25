@@ -5,7 +5,7 @@ import Footer from "@/components/sections/footer";
 import Link from "next/link";
 import React from "react";
 
-export default function RefundPolicy() {
+export default function refund_policy() {
   return (
     <>
       <Navbar />
@@ -20,7 +20,6 @@ export default function RefundPolicy() {
               refund for purchases or services made on our platform.
             </p>
           </div>
-
           <div className="text-gray-700 space-y-6">
             <section>
               <h2 className="text-xl font-semibold text-gray-900 mb-2">
@@ -80,7 +79,7 @@ export default function RefundPolicy() {
               </h2>
               <p>
                 If you have any questions about our Refund Policy, please reach
-                out to us at{" "}
+                out to us at
                 <Link href={errigo.support} className="font-medium">
                   support@example.com
                 </Link>
