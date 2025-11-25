@@ -48,7 +48,7 @@ Eriggo is your go-to platform for chef-prepared meals, farm-fresh fruits, and pa
 
 ---
 
-## 🌍 Why Eriggo?
+### 🌍 Why Eriggo?
 
 - **Fastest growing app in 2025** 🎉
 - Over 2000 deliveries completed
@@ -69,7 +69,7 @@ Eriggo is your go-to platform for chef-prepared meals, farm-fresh fruits, and pa
 
 ---
 
-## 🖥️ Getting Started
+### 🖥️ Getting Started
 
 1. **Clone the repository:**
    ```bash
