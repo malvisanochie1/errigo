@@ -52,13 +52,13 @@ const footer = () => {
                   </h4>
                   <ul className="text-gray-400 text-xs md:text-sm space-y-4 ">
                     <li className="font-semibold">
-                      <Link href="/privacy_policy">Privacy policy</Link>{" "}
+                      <Link href="/privacy">Privacy policy</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="/term_of_use">Term of use</Link>{" "}
+                      <Link href="/terms">Term of use</Link>{" "}
                     </li>
                     <li className="font-semibold">
-                      <Link href="/refund_policy">Refund policy</Link>{" "}
+                      <Link href="/refund">Refund policy</Link>{" "}
                     </li>
                   </ul>
                 </div>
